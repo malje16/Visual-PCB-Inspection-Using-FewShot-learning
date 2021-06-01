@@ -1,0 +1,267 @@
+{
+  "annotations": [
+    {
+      "area": 5820.75,
+      "bbox": [
+        1364,
+        225,
+        58.5,
+        99.5
+      ],
+      "category_id": 7,
+      "id": 1647,
+      "image_id": 158,
+      "iscrowd": 0,
+      "segmentation": []
+    },
+    {
+      "area": 5932.5,
+      "bbox": [
+        1644,
+        245,
+        105,
+        56.5
+      ],
+      "category_id": 7,
+      "id": 1648,
+      "image_id": 158,
+      "iscrowd": 0,
+      "segmentation": []
+    },
+    {
+      "area": 8987,
+      "bbox": [
+        1616,
+        427,
+        236.5,
+        38
+      ],
+      "category_id": 6,
+      "id": 1649,
+      "image_id": 158,
+      "iscrowd": 0,
+      "segmentation": []
+    },
+    {
+      "area": 8107.5,
+      "bbox": [
+        1616,
+        654,
+        235,
+        34.5
+      ],
+      "category_id": 6,
+      "id": 1650,
+      "image_id": 158,
+      "iscrowd": 0,
+      "segmentation": []
+    },
+    {
+      "area": 23844.5,
+      "bbox": [
+        870,
+        1112,
+        231.5,
+        103
+      ],
+      "category_id": 4,
+      "id": 1651,
+      "image_id": 158,
+      "iscrowd": 0,
+      "segmentation": []
+    },
+    {
+      "area": 44819.5,
+      "bbox": [
+        748,
+        412,
+        140.5,
+        319
+      ],
+      "category_id": 3,
+      "id": 1652,
+      "image_id": 158,
+      "iscrowd": 0,
+      "segmentation": []
+    },
+    {
+      "area": 25630,
+      "bbox": [
+        1563,
+        1050,
+        110,
+        233
+      ],
+      "category_id": 4,
+      "id": 1653,
+      "image_id": 158,
+      "iscrowd": 0,
+      "segmentation": []
+    },
+    {
+      "area": 4127.5,
+      "bbox": [
+        1242,
+        900,
+        63.5,
+        65
+      ],
+      "category_id": 5,
+      "id": 1654,
+      "image_id": 158,
+      "iscrowd": 0,
+      "segmentation": []
+    },
+    {
+      "area": 4589.5,
+      "bbox": [
+        1441,
+        897,
+        67,
+        68.5
+      ],
+      "category_id": 5,
+      "id": 1655,
+      "image_id": 158,
+      "iscrowd": 0,
+      "segmentation": []
+    },
+    {
+      "area": 40312.5,
+      "bbox": [
+        539,
+        410,
+        129,
+        312.5
+      ],
+      "category_id": 3,
+      "id": 1656,
+      "image_id": 158,
+      "iscrowd": 0,
+      "segmentation": []
+    },
+    {
+      "area": 12822.5,
+      "bbox": [
+        968,
+        203,
+        111.5,
+        115
+      ],
+      "category_id": 1,
+      "id": 1657,
+      "image_id": 158,
+      "iscrowd": 0,
+      "segmentation": []
+    },
+    {
+      "area": 12822.5,
+      "bbox": [
+        601,
+        204,
+        115,
+        111.5
+      ],
+      "category_id": 1,
+      "id": 1658,
+      "image_id": 158,
+      "iscrowd": 0,
+      "segmentation": []
+    },
+    {
+      "area": 13590,
+      "bbox": [
+        710,
+        838,
+        75.5,
+        180
+      ],
+      "category_id": 2,
+      "id": 1659,
+      "image_id": 158,
+      "iscrowd": 0,
+      "segmentation": []
+    },
+    {
+      "area": 13320,
+      "bbox": [
+        385,
+        838,
+        72,
+        185
+      ],
+      "category_id": 2,
+      "id": 1660,
+      "image_id": 158,
+      "iscrowd": 0,
+      "segmentation": []
+    }
+  ],
+  "categories": [
+    {
+      "id": 0,
+      "name": "components",
+      "supercategory": "none"
+    },
+    {
+      "id": 1,
+      "name": "CAP R",
+      "supercategory": "components"
+    },
+    {
+      "id": 2,
+      "name": "CAP S",
+      "supercategory": "components"
+    },
+    {
+      "id": 3,
+      "name": "DSUB",
+      "supercategory": "components"
+    },
+    {
+      "id": 4,
+      "name": "FUSE",
+      "supercategory": "components"
+    },
+    {
+      "id": 5,
+      "name": "LED",
+      "supercategory": "components"
+    },
+    {
+      "id": 6,
+      "name": "PIN",
+      "supercategory": "components"
+    },
+    {
+      "id": 7,
+      "name": "SCHOTTKY",
+      "supercategory": "components"
+    }
+  ],
+  "images": [
+    {
+      "date_captured": "2021-05-19T12:34:10+00:00",
+      "file_name": "Image102_jpg.rf.fa05476be23fdf2f0112befc2ff0a3c4.jpg",
+      "height": 1542,
+      "id": 158,
+      "license": 1,
+      "width": 2048
+    }
+  ],
+  "info": {
+    "contributor": "",
+    "date_created": "2021-05-19T12:34:10+00:00",
+    "description": "Exported from roboflow.ai",
+    "url": "https://app.roboflow.ai/datasets/highresdanchell/4",
+    "version": "4",
+    "year": "2021"
+  },
+  "licenses": [
+    {
+      "id": 1,
+      "name": "Unknown",
+      "url": ""
+    }
+  ]
+}
