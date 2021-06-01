@@ -1,0 +1,40 @@
+_BASE_: "../Reference_ficspcb.yaml"
+MODEL:
+  WEIGHTS: "checkpoints/Danchell_Experiment2/Base_Aspects/model_reset_surgery.pth"
+  MASK_ON: False
+  RESNETS:
+    DEPTH: 101
+  ROI_HEADS:
+    NUM_CLASSES: 8
+    OUTPUT_LAYER: "CosineSimOutputLayers"
+    FREEZE_FEAT: True
+  BACKBONE:
+    FREEZE: True
+  PROPOSAL_GENERATOR:
+    FREEZE: True
+  ANCHOR_GENERATOR:
+    SIZES: [[32], [64], [128], [256], [512]]  # One size for each in feature map
+    ASPECT_RATIOS: [[0.125, 0.5, 1.0, 2.0, 8.0]]  # Three aspect ratios (same for all in feature maps)
+  RPN:
+    IN_FEATURES: ["p2", "p3", "p4", "p5", "p6"]
+    PRE_NMS_TOPK_TRAIN: 16000  # Per FPN level
+    PRE_NMS_TOPK_TEST: 8000  # Per FPN level
+    POST_NMS_TOPK_TRAIN: 8000
+    POST_NMS_TOPK_TEST: 8000
+INPUT:
+  MIN_SIZE_TRAIN: (1200, 1800) #(480, 512, 544, 576, 608, 640, 672, 704, 736, 768, 800)
+  MAX_SIZE_TRAIN: 2600
+  MIN_SIZE_TEST: 1542  #I should check if this does anything
+  MAX_SIZE_TEST: 2600
+  MIN_SIZE_TRAIN_SAMPLING: 'range'
+DATASETS:
+  TRAIN: ('train_2shot2',)
+  TEST: ('val_2shot2',)
+SOLVER:
+  IMS_PER_BATCH: 1
+  BASE_LR: 0.001
+  STEPS: (1000, 2000)
+  MAX_ITER: 2500
+  WARMUP_ITERS: 20
+
+OUTPUT_DIR: "checkpoints/Danchell_Experiment2/FsDet_baseAspect_2shot2"

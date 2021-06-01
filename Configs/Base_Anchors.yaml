@@ -1,0 +1,33 @@
+_BASE_: "../Reference_ficspcb.yaml"
+MODEL:
+  WEIGHTS: "/home/maltenj/FrustratinglyFSOD/ImageNetPretrained/R-101.pkl"
+  MASK_ON: False
+  RESNETS:
+    DEPTH: 101
+  ROI_HEADS:
+    NUM_CLASSES: 21
+  RPN:
+    IN_FEATURES: ["p2", "p3", "p4", "p5", "p6"]
+    PRE_NMS_TOPK_TRAIN: 16000  # Per FPN level
+    PRE_NMS_TOPK_TEST: 8000  # Per FPN level
+    POST_NMS_TOPK_TRAIN: 8000
+    POST_NMS_TOPK_TEST: 8000
+DATASETS:
+  TRAIN: ('merged_train',)
+  TEST: ('merged_test',) #'danchell_highres_test',)#
+
+SOLVER:
+  IMS_PER_BATCH: 1 #8 #16
+  BASE_LR: 0.001
+  STEPS: (12000, )
+  MAX_ITER: 16000
+  WARMUP_ITERS: 100
+TEST: 
+  EVAL_PERIOD: 400
+INPUT:
+  MIN_SIZE_TRAIN: (2000, 2400)
+  MAX_SIZE_TRAIN: 3000
+  MIN_SIZE_TEST: 2200
+  MAX_SIZE_TEST: 3000
+  MIN_SIZE_TRAIN_SAMPLING: 'range'
+OUTPUT_DIR: "checkpoints/Danchell_Experiment2/Base_Anchors"
